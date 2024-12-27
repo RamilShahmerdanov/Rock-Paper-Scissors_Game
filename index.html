@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="overlay">
+      <h1 class="header">Welcome To My Rock Paper Scissors Game</h1>
+      <div id="gameStarting">Game Starting...</div>
+
+      <div id="loading"><div id="counter">1</div></div>
+    </div>
+    <div class="bodygame" id="bodygame">
+      <h1 class="head">Rock Paper Scissors</h1>
+
+      <div class="images">
+        <div onclick="playGame('rock')">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQw2rKHcM0ji5_KkYHEOLYhEso1Qc-Km3lhSAHruXwNmjECAfOHb88SlL_fYfvXE0-vQ&usqp=CAU"
+            alt="Rok"
+            class="image"
+          />
+        </div>
+        <div onclick="playGame('paper')">
+          <img
+            src="https://www.kindpng.com/picc/m/266-2667881_rock-paper-scissors-images-png-transparent-png.png"
+            alt="Paper"
+            class="image"
+          />
+        </div>
+        <div onclick="playGame('scissors')">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4z201WrcuA_ngYWRmTeiA17pWyEEvPezM3IFltMQT7U0pad53gdpGii_ZjlMmBbKNN4&usqp=CAU"
+            alt="Scissors"
+            class="image"
+          />
+        </div>
+      </div>
+      <div class="infobar">
+        <div class="points">
+          <p>YOU :<span id="yourpoint">0</span></p>
+        </div>
+        <div id="resultgame" class="infomes">
+          <p>Make your choice to start the game!</p>
+        </div>
+        <div class="points">
+          <p>KOMPUTER :<span id="comppoint">0</span></p>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="btndiv">
+          <button onclick="backHome()" class="resetbtn" type="button">
+            Back to Home
+          </button>
+        </div>
+        <div class="btndiv">
+          <button onclick="resetGame()" class="resetbtn" type="button">
+            Reset Game
+          </button>
+        </div>
+        <div class="btndiv">
+          <button onclick="exitGame()" class="resetbtn" type="button">
+            Exit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
