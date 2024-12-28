@@ -110,7 +110,7 @@ body{
     font-size: 30px;
 
    
-    background-color: rgb(58, 58, 163);
+    background-color: #3498db;
 }
 
 .buttons{
@@ -121,7 +121,7 @@ body{
 }
 #loading{
     margin-top: 20px;
-    width: 75%;
+    width: 70%;
     height: 40px;
     text-align: center;
     border-radius: 15px;
@@ -132,8 +132,41 @@ body{
 
 
 }
+#gameStarting{
+    margin-top: 80px;
+}
 .header{
-    margin-bottom: 45%;
+    margin-bottom: 10%;
     padding-top: 0;
     font-size: 60px;
+    color: #ffffff;
+    animation: colorChange 3s infinite, bounce 1s infinite;
 }
+@keyframes colorChange {
+    0% { color: #f00b0b; }
+    25% { color: #caca28; }
+    50% { color: #1c9cbc; }
+    75% { color: white; }
+    100% { color: #49dd96; }
+}
+
+/* @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+} */
+.loader {
+    border: 26px solid #f3f3f3;
+    border-top: 26px solid #3498db;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ 
